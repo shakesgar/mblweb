@@ -1,0 +1,129 @@
+/**********************************
+Responsive navbar-brand image CSS
+- Remove navbar-brand padding for firefox bug workaround
+- add 100% height and width auto ... similar to how bootstrap img-responsive class works
+***********************************/
+.navbar-brand {
+    padding: 0px;
+}
+
+/* Link */
+.navbar-default .navbar-nav > li > a {
+    color: #777;
+}
+
+.container {
+    padding: 10px;
+}
+
+.mteImage {
+    height: 120px;
+    padding: 5px;
+    padding-left: 30px;
+    padding-top: 15px;
+    width: 300px;
+
+}
+
+.iPhoneImage {
+    height: 500px;
+    width: 300px;
+    padding: 10px;
+}
+
+.navbar-brand > img {
+    height: 50px;
+    padding: 5px;
+    padding-left: 30px;
+    width: 300px;
+}
+
+/* CSS Transform Align Navbar Brand Text ... This could also be achieved with table / table-cells */
+.navbar-alignit .navbar-header {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    height: 50px;
+}
+
+.navbar-alignit .navbar-brand {
+    top: 50%;
+    display: block;
+    position: relative;
+    height: auto;
+    transform: translate(0, -50%);
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.navbar-nav > li > .dropdown-menu {
+    z-index: 9999;
+}
+
+.navbar-nav > li {
+    font-size: 1.8em;
+}
+
+body {
+    font-family: "Lato";
+}
+
+#bgImage {
+    background: url(../images/background.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: auto;
+    background-color: #f5f5f5;
+    padding-top: 10px;
+    box-shadow: 0 0 3px gray;
+}
+
+.footer h3 {
+    color: black;
+}
+
+#mteText {
+    color: darkblue;
+    font-size: 2em;
+    padding: 25px;
+}
+
+.mtetext {
+    color: darkblue;
+    font-size: 1.5em;
+    padding: 25px;
+}
+
+#mteText span {
+    font-style: italic;
+}
+
+#whiteText {
+    color: white;
+    font-style: inherit;
+}
+
+.mteTextNews {
+    color: black;
+    font-size: 1.3em;
+}
+
+.whiteBackground {
+    background-color: white;
+}
+
+#brandLogoMortgage {
+    color: darkblue;
+    font-size: 2.3em;
+
+}
+#brandLogoBrain{
+    color: dimgray;
+    font-size: 2.3em;
+}
