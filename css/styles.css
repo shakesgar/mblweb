@@ -3,13 +3,61 @@ Responsive navbar-brand image CSS
 - Remove navbar-brand padding for firefox bug workaround
 - add 100% height and width auto ... similar to how bootstrap img-responsive class works
 ***********************************/
+
+@media (max-width: 480px) {
+    .navbar li a {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .navbar li a {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .navbar li a {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 980px) {
+    .navbar li a {
+        font-size: 18px;
+    }
+}
+
+html, body {
+    height: 100%;
+    padding-top:20px;
+    padding-bottom: 350px;
+    font-family: 'PT Sans',sans-serif;
+}
+
+.btn {
+    color: #210449;
+}
+.text-white {
+    color: #210449 !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 1.2em;
+}
+.text-black{
+    color: #210449 !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 1.2em;
+}
 .navbar-brand {
     padding: 0px;
 }
 
 /* Link */
 .navbar-default .navbar-nav > li > a {
-    color: #777;
+    color: white;
+    font-weight: bold;
 }
 
 .container {
@@ -25,9 +73,28 @@ Responsive navbar-brand image CSS
 
 }
 
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+.services-section {
+    text-align: center;
+    width: 90px;
+    height: 90px;
+}
+
 .iPhoneImage {
     height: 500px;
     width: 300px;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+    display: block;
+
+}
+#iPhoneImageMain {
+    height: 500px;
+    width: 800px;
     padding: 10px;
 }
 
@@ -44,6 +111,7 @@ Responsive navbar-brand image CSS
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
     height: 50px;
+    background-color: dimgray;
 }
 
 .navbar-alignit .navbar-brand {
@@ -56,48 +124,45 @@ Responsive navbar-brand image CSS
     margin-left: 15px;
 }
 
-.navbar-nav > li > .dropdown-menu {
-    z-index: 9999;
-}
-
-.navbar-nav > li {
-    font-size: 1.8em;
-}
-
-body {
-    font-family: "Lato";
-}
-
 #bgImage {
-    background: url(../images/background.jpg) no-repeat center fixed;
-    background-size: cover;
+    background-color: lightgrey;
+
 }
 
 .footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    /* Set the fixed height of the footer here */
-    height: auto;
-    background-color: #f5f5f5;
+    background-color: #1597AD;
     padding-top: 10px;
-    box-shadow: 0 0 3px gray;
+    clear: both;
+    color: white;
+    border-top: solid;
+    border-top-color: white;
 }
 
 .footer h3 {
-    color: black;
+    color: white;
 }
 
 #mteText {
-    color: darkblue;
+    color: white;
     font-size: 2em;
-    padding: 25px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.mteOrange {
+    color: orange;
+    font-size: 2em;
+    padding: 10px;
+}
+.mteOrangeTwo {
+    color: orange;
 }
 
 .mtetext {
     color: darkblue;
     font-size: 1.5em;
     padding: 25px;
+    background-color: white;
 }
 
 #mteText span {
@@ -105,13 +170,18 @@ body {
 }
 
 #whiteText {
-    color: white;
+    color: #210449;
+    font-style: inherit;
+}
+
+#whiteText2 {
+    color: #210449;
     font-style: inherit;
 }
 
 .mteTextNews {
     color: black;
-    font-size: 1.3em;
+    font-size: 1.6em;
 }
 
 .whiteBackground {
@@ -119,11 +189,46 @@ body {
 }
 
 #brandLogoMortgage {
-    color: darkblue;
-    font-size: 2.3em;
+    color: white;
+    font-size: 1.8em;
 
 }
-#brandLogoBrain{
-    color: dimgray;
-    font-size: 2.3em;
+
+#brandLogoBrain {
+    color: darkslategrey;
+    font-size: 1.8em;
+}
+
+.container-fluid {
+    background-color: #1597AD;
+}
+
+#homeLogo {
+    margin-top: 6px;
+    height: 40px;
+    width: 40px;
+}
+
+.container-fluid {
+
+}
+#supportText{
+}
+
+#supportText h2{
+    color: white;
+    font-size: x-large;
+}
+#supportText h5{
+    color: orange;
+    font-size: x-large;
+}
+.container h5{
+    color: darkblue !important;
+}
+#supportText a h5{
+    color: white;
+}
+#mteText a{
+    color: orange;
 }
